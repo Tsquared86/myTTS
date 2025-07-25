@@ -4,7 +4,7 @@
 # Run:   docker run --rm --gpus all -p 7860:7860 dia-gpu
 # Requires NVIDIA Container Toolkit on host.
 
-FROM pytorch/pytorch:2.1.2-cuda12.1-cudnn8-runtime
+FROM pytorch/pytorch:2.3.1-cuda12.1-cudnn8-runtime AS builder
 
 # Set non-interactive frontend
 ENV DEBIAN_FRONTEND=noninteractive
